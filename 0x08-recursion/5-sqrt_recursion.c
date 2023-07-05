@@ -18,10 +18,10 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * _sqrt_helper - Helper function to perform binary search for square root
+ * _sqrt_helper - Recursive helper function to find square root
  * @n: The number to calculate the square root of
- * @start: The starting index of the range
- * @end: The ending index of the range
+ * @start: The starting value for the range
+ * @end: The ending value for the range
  *
  * Return: The natural square root of the number, or -1 if not found
  */
