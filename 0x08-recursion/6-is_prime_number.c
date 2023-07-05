@@ -9,7 +9,7 @@
  * by iterating from `n-1` down to 1. If `i` reaches 1 without finding any
  * factors of `n`, the function returns 1, indicating that `n` is a prime
  * number. Otherwise, if `n` is divisible by `i` and `i` is greater than 0,
- * the function returns 0, indicating that `n` is not a prime number.
+ * returns 0,
  *
  * Return: 1 if `n` is prime, 0 if not
  */
