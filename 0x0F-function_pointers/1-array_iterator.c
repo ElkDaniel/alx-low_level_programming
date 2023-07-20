@@ -2,24 +2,22 @@
 #include <stdlib.h>
 
 /**
- * int_index - a function that searches an integer
- * @size: number of elements in the array
- * @array: array
- * @cmp: pointer to function used
- * Return: 0
+ * array_iterator - prints each array elem on a new line
+ * @array: new array
+ * @size: how many elem to print
+ * @action: pointer to print in regular or not
+ * Return: void
  */
 
-int int_index(int *array, int size, int(*cmp)(int))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
+	unsigned int i;
 
-	if (array == NULL || size <= 0 || cmp == NULL)
-		return (-1);
+	if (array == NULL || action == NULL)
+		return;
 
 	for (i = 0; i < size; i++)
 	{
-		if (cmp(array[i]))
-			return (i);
+		action(array[i]);
 	}
-	return (-1);
 }
